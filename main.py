@@ -134,9 +134,6 @@ class DmRobot(object):
     def __init__(self):
         self.decoder = DmDecoder()
 
-    def fromVideo(self):
-        pass
-
     def fromSegSoUrl(self, url: str):
         return self.fromBuffer(requests.get(url).content)
 
